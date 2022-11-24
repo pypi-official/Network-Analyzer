@@ -35,7 +35,6 @@ def printit(pcap):
             print(e)
 
 if __name__ == "__main__":
-    tprint("Network Traffic Analyzer",font="3d_diagonal")
     parser=argparse.ArgumentParser(description="Tool used to Detect DDOS attack and also provides a additional functionality to get the geolocation of the IP ")
     parser.add_argument("-l" ,required=True, dest="pcap", help="Add the pcap file location")
     parser.add_argument("-p" ,required=False, dest="print" ,help="print the geolocation of the IP addresses", action="store_true")
